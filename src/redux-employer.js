@@ -12,7 +12,6 @@ const EmployerSlice = createSlice({
 	reducers: {
 		addEmployer: (state, action) => {
 			state.loading = false;
-      console.log(action.payload);
 			if (Array.isArray(action.payload)) {
 				action.payload.forEach((user) => {
 					state.users.push(user);

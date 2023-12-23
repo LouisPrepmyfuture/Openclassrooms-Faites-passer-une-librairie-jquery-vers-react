@@ -58,7 +58,7 @@ function FormCreateEmployer() {
   useEffect(() => {
     if (status === "success") {
       dispatch(reStartStatus());
-      handleModal(<ContentModal ></ContentModal>, "title")
+      handleModal(<ContentModal ></ContentModal>, "L'employé a été ajouté avec succès")
     }
   }, [status, navigate, dispatch, handleModal]);
 
